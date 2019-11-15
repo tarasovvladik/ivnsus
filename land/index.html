@@ -2,6 +2,12 @@
 <html>
 
 <head>
+  <!-- ЗАПИСЬ ПИКСЕЛЯ В COOKIES -->
+<script>
+	$(function() {
+		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
+	});
+</script>
     <meta charset="UTF-8">
     <title>Получить HondroLine бесплатно. Реальные отзывы. Закажите HondroLine сейчас!</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

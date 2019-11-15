@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="css1/style1.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- ЗАПИСЬ ПИКСЕЛЯ В COOKIES -->
+<script>
+	$(function() {
+		if (url('?pixel')) Cookies.set('pixel', url('?pixel'), {expires: 30});
+	});
+</script>
 <!--- Скрипт блокировки скролла-->
     <script>
         $(document).ready(function () {
@@ -776,6 +782,7 @@ $(function() {
 
                                                     					<input type='hidden' name='campaign_id' value='910157' />
                                                     					<input type='hidden' name='sid1' value='Ivan' />
+                                                              	<input type='hidden' name='redirect_ur' value='https://tarasovvladik.github.io/ivnsus/thanks.html' />
 
                                                                 <select name="country" class="orderFormWrapperCountry"
                                                                     style="display: none;"></select>
